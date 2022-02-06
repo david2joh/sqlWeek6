@@ -1,0 +1,43 @@
+Week 6 Research
+
+Prompts
+
+What is the difference between TDD and BDD?
+
+TDD and BDD are both test first software development strategies.
+TDD focuses on delivery of a single functional feature at a time,
+usually involving just the development team, and provides extensive
+test coverage throughout the code base.  TDD development can be extensive
+and may be brittle in response to implementation changes.
+BDD focuses on the system behavior use cases, involves all stakeholders
+including the customer, however only the system behavior itself is validated.
+BDD testing changes only in response to the entire system behavior changing.
+
+
+What does mocking a class allow you to do?
+
+Mocking allows testing a class functionality in isolation wherein the mock objects provides dummy services
+and data to the object under test.
+A mocking class is an object or interface with stub methods which may or may not contain functionality.
+
+What is the value in separating your code into controller, service, and data access layers rather than keeping it all in the same files?
+
+Also know as MVC.  The largest advantage is seperating functionality responsibility into disparate components.
+One component handles the data access, one for user interface , one for data processing between the user interface and data access.
+This allows each component to be developed and tested independently from one another as longs as the interactions between the
+components are well defined and hopefully isolates defects to a single component. 
+
+
+Why would you want to avoid putting credentials in plaintext in your code?
+Plaintext allows anyone with code access , malicious or not, to view access parameters , for example username/password.
+
+What is one method that can be used to avoid putting plaintext database usernames and passwords into your code?
+Program external credential storage with a salted hash. 
+
+
+What is your favorite thing you learned this week?
+Parameterized JUnit testing.
+
+Sources
+https://site.mockito.org/
+https://www.interserver.net/tips/kb/mvc-advantages-disadvantages-mvc/
